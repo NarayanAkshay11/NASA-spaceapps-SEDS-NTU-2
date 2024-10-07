@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exoplanet Star Maps</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Three.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- OrbitControls for Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <title>Star Map</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sidebar">
-        <h2>Exoplanets</h2>
-        <button id="toggle-button">☰</button>
-        <ul id="exoplanet-list"></ul>
+    <div class="container">
+        <h1>Star Map Viewer</h1>
+        <div class="buttons">
+            <button id="planet1">Planet 1</button>
+            <button id="planet2">Planet 2</button>
+            <button id="planet3">Planet 3</button>
+        </div>
+        <canvas id="starMapCanvas"></canvas>
     </div>
-    <div id="map-container">
-        <div id="star-map"></div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
